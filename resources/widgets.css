@@ -1,0 +1,109 @@
+* {
+    color: rgb(240, 240, 240);
+}
+
+QDialog {
+    background-color: rgb(71, 62, 137);
+}
+
+QMenu {
+    background-color: rgb(71, 62, 137);
+}
+
+QMenu::item {
+    background-color: transparent;
+}
+
+QMenu::item:selected {
+    background-color: rgb(135, 129, 177);
+}
+
+QDialog:disabled {
+    background-color: rgb(135, 129, 177);
+}
+
+QLineEdit, QComboBox, QLabel {
+    font-size: 14px;
+}
+
+QLineEdit, QComboBox, QPushButton {
+    background-color: rgb(91, 81, 161);
+    border-radius: 3px;
+    border: none;
+}
+
+QLineEdit:disabled, QComboBox:disabled, QPushButton:disabled {
+    background-color: rgb(161, 153, 208);
+}
+
+QLineEdit, QComboBox, QComboBox QAbstractItemView {
+    border: 1px solid rgb(62, 54, 122);
+}
+
+QLineEdit:disabled, QComboBox:disabled {
+    border: 1px solid rgb(129, 124, 167);
+}
+
+QLineEdit, QLabel, QComboBox {
+    padding: 0 8px;
+    margin: 3px 0;
+    height: 36px;
+}
+
+QComboBox::drop-down {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    width: 18px;
+    height: 36px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/dropdown.svg);
+    width: 8px;
+    height: 8px;
+    top: 1px;
+    right: 4px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgb(71, 62, 137);
+}
+
+QPushButton {
+    background-color: rgb(40, 158, 84);
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+QPushButton:disabled {
+    background-color: rgb(125, 120, 162);
+}
+
+QPushButton:hover {
+    background-color: rgb(39, 179, 92);
+}
+
+QPlainTextEdit {
+    background-color: rgb(21, 12, 89);
+}
+
+QLabel {
+    color: rgb(202, 194, 255);
+    padding-left: 0;
+}
+
+QLabel:disabled {
+    color: rgb(217, 196, 211);
+}
+
+QLabel#status {
+    border-radius: 3px;
+    padding: 6px 0;
+    font: bold;
+}
+
+QLabel#status:disabled {
+    background-color: rgb(255, 213, 111);
+    color: rgb(92, 73, 121);
+}

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>logo.svg</file>
+        <file>widgets.css</file>
+        <file>icons/app.svg</file>
+        <file>icons/dropdown.svg</file>
+        <file>icons/win/log-view.svg</file>
+        <file>icons/win/disconnected.svg</file>
+        <file>icons/win/connecting.svg</file>
+        <file>icons/win/connected.svg</file>
+        <file>icons/mac/log-view.svg</file>
+        <file>icons/mac/disconnected.svg</file>
+        <file>icons/mac/connecting.svg</file>
+        <file>icons/mac/connected.svg</file>
+        <file>icons/linux/log-view.svg</file>
+        <file>icons/linux/disconnected.svg</file>
+        <file>icons/linux/connecting.svg</file>
+        <file>icons/linux/connected.svg</file>
+    </qresource>
+</RCC>
