@@ -51,7 +51,7 @@ static QNetworkReply *logReplyErrors(QObject *owner, QNetworkReply *reply)
 	});
 
 	QObject::connect(reply, &QNetworkReply::sslErrors, owner, [=](const QList<QSslError> &errors) {
-		for (auto error : errors)
+		for (auto &error : errors)
 			qCritical() << "SSL Error:" << error.errorString();
 	});
 	return reply;
