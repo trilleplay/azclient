@@ -1,0 +1,25 @@
+language: cpp
+
+dist: trusty
+sudo: false
+
+compiler:
+  - clang
+  - gcc
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:beineri/opt-qt58-trusty'
+    packages:
+    - qt58-meta-minimal
+    - qt58svg
+    - qt58tools
+    - openvpn
+
+install:
+  - source /opt/qt58/bin/qt58-env.sh
+
+script:
+  - qmake
+  - make

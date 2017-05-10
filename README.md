@@ -1,5 +1,7 @@
 # `azclient` -- Customizable VPN Client
 
+[![Build Status](https://travis-ci.org/azirevpn/azclient.svg?branch=master)](https://travis-ci.org/azirevpn/azclient)
+
 This is a customizable VPN client, meant to be simple and sleek. It was originally built for [AzireVPN](https://www.azirevpn.com/), but has been designed from the beginning for customization in other contexts. Without modifying anything, it will currently build with the AzireVPN branding.
 
 ### Linux Dependencies
