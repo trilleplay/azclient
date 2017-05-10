@@ -1,11 +1,17 @@
 language: cpp
 
-dist: trusty
-sudo: false
-
-compiler:
-  - clang
-  - gcc
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: false
+      compiler: clang
+    - os: linux
+      dist: trusty
+      sudo: false
+      compiler: gcc
+    - os: osx
+      osx_image: xcode8.3
 
 addons:
   apt:
@@ -17,8 +23,13 @@ addons:
     - qt58tools
     - openvpn
 
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install qt5; fi
+
 install:
-  - source /opt/qt58/bin/qt58-env.sh
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="/usr/local/opt/qt/bin:$PATH"; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source /opt/qt58/bin/qt58-env.sh; fi
 
 script:
   - qmake
