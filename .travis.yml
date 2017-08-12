@@ -11,7 +11,7 @@ matrix:
       sudo: false
       compiler: gcc
     - os: osx
-      osx_image: xcode8.3
+      osx_image: xcode9
 
 addons:
   apt:
